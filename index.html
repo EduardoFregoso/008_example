@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Nuevo usuario</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Consulta usuarios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Nuevo artículo</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" id="consultaArt-tab" data-toggle="tab" href="#consultaArt" role="tab" aria-controls="contact" aria-selected="false">Consulta artículos</a>
+                      </li>
+              </ul>
+              <!--contenido de Nuevo Usuario-->
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container-fluid mt-3 ">
+                       <div class="accordion" id="accordionExample">
+                            <h2>Usuario</h2> 
+
+                            <label class="mt-3">Registrar nuevo</label>
+                            <hr/>
+
+                            <form class="mt-5"> 
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Nombre</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Contraseña</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" >
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="exampleInputPassword1">Edad</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" >
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="exampleInputPassword1">Correo Electronico</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" >
+                                          </div>
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-success ">Guardar</button>
+                                    </div>
+                            </form>
+                       
+                        </div>                             
+                    </div>
+                </div>
+                <!--Contenido de Consulta Usuarios -->
+                <div class="tab-pane fade " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container-fluid mt-5 ">
+                        <div class="accordion" id="accordionExample">
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Contraseña</th>
+                                    <th scope="col">Edad</th>
+                                    <th scope="col">Correo electronico</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row">1</td>
+                                    <td>iarjona</td>
+                                    <td>abcd1234*</td>
+                                    <td>32</td>
+                                    <td>epacheco@gmail.com</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">2</td>
+                                    <td>kmoreno</td>
+                                    <td>dadada5655_33</td>
+                                    <td>24</td>
+                                    <td>kmoreno@gmail.com</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">3</td>
+                                    <td>epacheco</td>
+                                    <td>pa12pa23</td>
+                                    <td>23</td>
+                                    <td>epacheco@gmail.com</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                           
+                        </div>                             
+                    </div>
+                </div>
+                <!--Contenido de Nuevo Ariculo-->
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container-fluid mt-5 ">
+                        <div class="accordion" id="accordionExample">
+                            <h2>Articulo</h2> 
+
+                            <label class="mt-3">Registrar nuevo</label>
+                            <hr/>
+
+                            <form class="mt-5"> 
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Nombre</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                            <label for="exampleInputPassword1">Descripcion</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" >
+                                          </div>
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-success ">Guardar</button>
+                                    </div>
+                            </form>     
+                        </div>                             
+                    </div>
+                </div>
+
+                 <!--Contenido de Consultar Articulo-->
+                 <div class="tab-pane fade" id="consultaArt" role="tabpanel" aria-labelledby="consultaArt-tab">
+                    <div class="container-fluid mt-5">
+                        <div class="accordion" id="accordionExample">
+                            <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Descripcion</th>                                   
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row">1</td>
+                                    <td>Macbook Air</td>
+                                    <td>13 pulgadass, 8RAM, 128SSD*</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">2</td>
+                                    <td>HP ProBook 450</td>
+                                    <td>8 RAM, 1TB HDD, Inttel Core i5</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">3</td>
+                                    <td>ASUS X555DG-XO091T</td>
+                                    <td>256 SSD, Intel Core i5</td>
+                                  </tr>
+                                </tbody>
+                              </table>         
+                                       
+                        </div>                             
+                    </div>
+                 </div>
+                    
+
+
+                
+                  
+                
+              </div>
+              </div>
+              
+        
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
